@@ -3,7 +3,7 @@ import cv2
 import time
 
 
-bg_image = cv2.imread("742.jpg")
+bg_image = cv2.imread("742.jpg") # if img is not on same dir than need to add path of that img dir  
 bg_image = cv2.resize(bg_image, (640, 360))
 top, bottom = 100, 300
 
@@ -96,8 +96,8 @@ if __name__ == "__main__":
         "--input_video",
         type=str,
         help="Define the full input video path",
-        #default="cars.mp4",
-        default="v_clip.mp4",
+        default="cars.mp4",
+        #default="v_clip.mp4",
     )
 
     # parse script arguments
